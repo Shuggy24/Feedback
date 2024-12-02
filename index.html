@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Bike Rallye Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Feedback zur E-Bike Rallye</h1>
+    <p>Vielen Dank, dass du an unserer E-Bike Rallye teilgenommen hast! Wir freuen uns, deine Meinung zu hören, um zukünftige Veranstaltungen noch besser zu gestalten.</p>
+  </header>
+
+  <main>
+    <form id="feedback-form" action="mailto:deine-email@domain.com" method="post" enctype="multipart/form-data">
+      <h2>Allgemeines Feedback</h2>
+      <label for="name">Name (optional):</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">E-Mail-Adresse (optional, für Rückfragen):</label>
+      <input type="email" id="email" name="email">
+
+      <h2>Bitte bewerte die folgenden Punkte:</h2>
+
+      <label for="event-experience">Wie zufrieden warst du mit der Veranstaltung insgesamt?</label>
+      <select id="event-experience" name="event-experience">
+        <option value="sehr zufrieden">Sehr zufrieden</option>
+        <option value="zufrieden">Zufrieden</option>
+        <option value="neutral">Neutral</option>
+        <option value="unzufrieden">Unzufrieden</option>
+        <option value="sehr unzufrieden">Sehr unzufrieden</option>
+      </select>
+
+      <label for="organization">Wie gut war die Organisation der Rallye?</label>
+      <select id="organization" name="organization">
+        <option value="sehr gut">Sehr gut</option>
+        <option value="gut">Gut</option>
+        <option value="durchschnittlich">Durchschnittlich</option>
+        <option value="schlecht">Schlecht</option>
+        <option value="sehr schlecht">Sehr schlecht</option>
+      </select>
+
+      <label for="route">Wie zufrieden warst du mit der Route und den Streckenbedingungen?</label>
+      <select id="route" name="route">
+        <option value="sehr zufrieden">Sehr zufrieden</option>
+        <option value="zufrieden">Zufrieden</option>
+        <option value="neutral">Neutral</option>
+        <option value="unzufrieden">Unzufrieden</option>
+        <option value="sehr unzufrieden">Sehr unzufrieden</option>
+      </select>
+
+      <label for="staff">Wie war dein Eindruck vom Veranstaltungsteam (z. B. Betreuung, Kommunikation)?</label>
+      <select id="staff" name="staff">
+        <option value="sehr gut">Sehr gut</option>
+        <option value="gut">Gut</option>
+        <option value="durchschnittlich">Durchschnittlich</option>
+        <option value="schlecht">Schlecht</option>
+        <option value="sehr schlecht">Sehr schlecht</option>
+      </select>
+
+      <label for="safety">Wie sicher hast du dich während der Rallye gefühlt?</label>
+      <select id="safety" name="safety">
+        <option value="sehr sicher">Sehr sicher</option>
+        <option value="sicher">Sicher</option>
+        <option value="neutral">Neutral</option>
+        <option value="unsicher">Unsicher</option>
+        <option value="sehr unsicher">Sehr unsicher</option>
+      </select>
+
+      <label for="suggestions">Hast du Vorschläge oder Wünsche für zukünftige Veranstaltungen?</label>
+      <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+
+      <button type="submit">Feedback absenden</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 E-Bike Rallye. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
